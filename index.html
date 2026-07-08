@@ -440,7 +440,7 @@
     while (j === i) j = Math.floor(Math.random() * currentEmojis.length);
     [currentEmojis[i], currentEmojis[j]] = [currentEmojis[j], currentEmojis[i]];
     render(currentEmojis);
-    setStatus(removedEmoji ? 'Zwei wurden vertauscht – was fehlt? 🤔' : 'Zwei wurden vertauscht – schaut genau hin! 🔀');
+    setStatus(removedEmoji ? 'Zwei wurden vertauscht 🤔' : 'Zwei wurden vertauscht – schaut genau hin! 🔀');
     updateButtons();
   }
 
@@ -450,7 +450,7 @@
     removedEmoji = currentEmojis.splice(index, 1)[0];
     currentEmojis = shuffledCopy(currentEmojis);
     render(currentEmojis);
-    setStatus('Entfernt & gemischt – was fehlt? 🤔🔀');
+    setStatus('Was fehlt? 🤔🔀');
     updateButtons();
   }
 
